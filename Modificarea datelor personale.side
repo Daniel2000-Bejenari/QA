@@ -1,0 +1,693 @@
+{
+  "id": "3142f09b-bcf3-479c-bb95-ba50cd3fdd78",
+  "version": "2.0",
+  "name": "Modificarea datelor personale",
+  "url": "https://www.barnesandnoble.com",
+  "tests": [{
+    "id": "87dbda4b-b854-4738-8d74-281689e8208e",
+    "name": "Modificarea datelor personale",
+    "commands": [{
+      "id": "85623527-b9f2-4c7d-bca8-a7936b79d960",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03fa3d09-a3fd-4015-ada6-ae22c58cdb86",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bb8e35c-45dd-4c4f-a0a4-e801abc93d77",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["css=.mobile-hide > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Hi, Daniel')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//header[@id='rhf_header_element']/nav/div/div[2]/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af34e319-8c83-4d47-8e12-be84fdb871a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Account",
+      "targets": [
+        ["linkText=Manage Account", "linkText"],
+        ["css=.rhf-myaccount-menu-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Account')]", "xpath:link"],
+        ["xpath=//header[@id='rhf_header_element']/nav/div/div[2]/ul[2]/li/div/a", "xpath:idRelative"],
+        ["xpath=//ul[2]/li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec8fdfd8-afa3-4331-8d7f-d7abd3510704",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adc2ee45-5b73-47d1-93cc-003447604611",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d97ab893-cf4e-45b6-8f64-a5db3254c481",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Address Book",
+      "targets": [
+        ["linkText=Manage Address Book", "linkText"],
+        ["css=.focus > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Address Book')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/account/manage/addresses/')])[3]", "xpath:href"],
+        ["xpath=//section[4]/div/section/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Address Book')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd4a20fe-b2db-4bd3-9968-4d15be26fe45",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit Address",
+      "targets": [
+        ["linkText=Edit Address", "linkText"],
+        ["css=.link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit Address')]", "xpath:link"],
+        ["xpath=//section[@id='defaultAddressDesc']/section/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit Address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4e32350-a1a1-459b-9fd4-383397b04ad9",
+      "comment": "",
+      "command": "click",
+      "target": "id=country-replacement",
+      "targets": [
+        ["id=country-replacement", "id"],
+        ["css=#country-replacement", "css:finder"],
+        ["xpath=//a[@id='country-replacement']", "xpath:attributes"],
+        ["xpath=//div[@id='editAddressForm']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b12f7c54-6476-434d-85b7-c7df88b8cd41",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Iraq",
+      "targets": [
+        ["linkText=Iraq", "linkText"],
+        ["css=#country-option-70 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Iraq')]", "xpath:link"],
+        ["xpath=//li[@id='country-option-70']/a", "xpath:idRelative"],
+        ["xpath=//li[71]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "678f6cb8-dede-458c-be79-d6e0456bdd71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.focus > .col-lg-12",
+      "targets": [
+        ["css=.focus > .col-lg-12", "css:finder"],
+        ["xpath=//div[@id='editAddressForm']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edc7b4f1-ac53-4510-b0c2-868aa5d0789a",
+      "comment": "",
+      "command": "type",
+      "target": "id=streetAddress",
+      "targets": [
+        ["id=streetAddress", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.address1", "name"],
+        ["css=#streetAddress", "css:finder"],
+        ["xpath=//input[@id='streetAddress']", "xpath:attributes"],
+        ["xpath=//div[@id='editAddressForm']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "Iarmaroc"
+    }, {
+      "id": "f8db1276-e29e-46a3-a988-dfff65428f07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.account",
+      "targets": [
+        ["css=.account", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "badc3470-dba4-4d45-a765-04764d162654",
+      "comment": "",
+      "command": "type",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//div[@id='editAddressForm']/div[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": "Iasi"
+    }, {
+      "id": "01661727-2659-411b-9cea-475c368e2cb1",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='editAddressForm']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c2e29f5-c99f-4332-bb0e-1c83b17e9a5d",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='editAddressForm']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": "12312131312312312"
+    }, {
+      "id": "bf0c2963-884b-4524-8ef7-c378ebe0d193",
+      "comment": "",
+      "command": "click",
+      "target": "id=addAddressSubmit",
+      "targets": [
+        ["id=addAddressSubmit", "id"],
+        ["css=#addAddressSubmit", "css:finder"],
+        ["xpath=//input[@id='addAddressSubmit']", "xpath:attributes"],
+        ["xpath=//div[@id='editAddressForm']/div[12]/input[9]", "xpath:idRelative"],
+        ["xpath=//div[12]/input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d805acc9-67c8-4efa-a661-84438793d57e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73d95c4e-3a54-4991-85ba-8a0104048e5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=addNewShippingAddress",
+      "targets": [
+        ["id=addNewShippingAddress", "id"],
+        ["linkText=Add New Address", "linkText"],
+        ["css=#addNewShippingAddress", "css:finder"],
+        ["xpath=//a[contains(text(),'Add New Address')]", "xpath:link"],
+        ["xpath=//a[@id='addNewShippingAddress']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/account/manage/addresses/new.jsp')]", "xpath:href"],
+        ["xpath=//main/div/div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add New Address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e484310-43ac-4b32-9210-4c9a49d8a834",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Bejenari"
+    }, {
+      "id": "40b1561c-b0a4-4e38-b293-644c252fa735",
+      "comment": "",
+      "command": "click",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "938c1c69-8122-4250-a4f8-29c42a0944a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "Daniel"
+    }, {
+      "id": "4a7cea51-1071-4ceb-a133-29f520aff833",
+      "comment": "",
+      "command": "click",
+      "target": "id=addAddressSubmit",
+      "targets": [
+        ["id=addAddressSubmit", "id"],
+        ["css=#addAddressSubmit", "css:finder"],
+        ["xpath=//input[@id='addAddressSubmit']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[12]/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18089ccd-0bbc-4383-a86d-8829a5e2150d",
+      "comment": "",
+      "command": "click",
+      "target": "id=streetAddress",
+      "targets": [
+        ["id=streetAddress", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.address1", "name"],
+        ["css=#streetAddress", "css:finder"],
+        ["xpath=//input[@id='streetAddress']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3126d616-202b-43f1-b4a9-131a7bc4eed1",
+      "comment": "",
+      "command": "type",
+      "target": "id=streetAddress",
+      "targets": [
+        ["id=streetAddress", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.address1", "name"],
+        ["css=#streetAddress", "css:finder"],
+        ["xpath=//input[@id='streetAddress']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "asasasd"
+    }, {
+      "id": "e8dfecc5-4d0d-4bd7-ae43-556a72293040",
+      "comment": "",
+      "command": "click",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e963448-a351-4335-93db-fd0da0ae988b",
+      "comment": "",
+      "command": "type",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.city", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": "asdasdad"
+    }, {
+      "id": "0bc6ef22-2f9e-4a2b-9f80-a3bbd1a1ce51",
+      "comment": "",
+      "command": "click",
+      "target": "id=state-replacement",
+      "targets": [
+        ["id=state-replacement", "id"],
+        ["linkText=State", "linkText"],
+        ["css=#state-replacement", "css:finder"],
+        ["xpath=//a[@id='state-replacement']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fec8d00f-8f16-4c6c-a7cf-b47fc364f32c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alabama",
+      "targets": [
+        ["linkText=Alabama", "linkText"],
+        ["css=#state-option-1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Alabama')]", "xpath:link"],
+        ["xpath=//li[@id='state-option-1']/a", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f24f655-a5f4-4a2f-abb8-85d305c1abf4",
+      "comment": "",
+      "command": "click",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4095e9f4-3ef9-4ca1-86c6-7a0d3cbe4450",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "asdasda"
+    }, {
+      "id": "870fb6a2-7327-4c48-bfdd-30d9ad798729",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc9dbafe-a026-4bb7-8868-1eea7b5539d6",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": "asdadasdasd"
+    }, {
+      "id": "fe41405f-9fd7-48e4-8175-8f69d341830b",
+      "comment": "",
+      "command": "click",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6933dbff-a2f7-4359-89e4-6325a676b5ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(2)",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[7]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0066fa7-6e7e-45e4-a981-f4c1744bbeff",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "345345345"
+    }, {
+      "id": "116c0360-2fb2-4157-9aa9-37819fd306c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f95c854f-2837-42fc-b89f-ab5cde45c6da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.focus > .col-lg-6",
+      "targets": [
+        ["css=.focus > .col-lg-6", "css:finder"],
+        ["xpath=//form[@id='addAddress']/div[8]/div", "xpath:idRelative"],
+        ["xpath=//div[8]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11dc2602-7818-4c22-849f-5e326fcd55bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": "34534534534"
+    }, {
+      "id": "49c4bdd3-f442-45c7-9268-4973b45e4f58",
+      "comment": "",
+      "command": "click",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbb2606c-d2cb-46d9-989b-82b06a0fce55",
+      "comment": "",
+      "command": "click",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e518d3b-9051-4ee1-ade6-b99cbd23b0ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "234234234"
+    }, {
+      "id": "09f5dc73-661e-4cb9-baee-8b50f89d8519",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3486b1a4-21ae-4cf2-8e1f-48d986b08062",
+      "comment": "",
+      "command": "click",
+      "target": "id=addAddressSubmit",
+      "targets": [
+        ["id=addAddressSubmit", "id"],
+        ["css=#addAddressSubmit", "css:finder"],
+        ["xpath=//input[@id='addAddressSubmit']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[12]/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "407bfea2-a0b0-4556-96e2-f324f2a77290",
+      "comment": "",
+      "command": "click",
+      "target": "id=country-replacement",
+      "targets": [
+        ["id=country-replacement", "id"],
+        ["css=#country-replacement", "css:finder"],
+        ["xpath=//a[@id='country-replacement']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "333e1343-278b-410f-8397-84946d6647a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Afghanistan",
+      "targets": [
+        ["linkText=Afghanistan", "linkText"],
+        ["css=#country-option-2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Afghanistan')]", "xpath:link"],
+        ["xpath=//li[@id='country-option-2']/a", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "546ce0c2-eb21-4a03-b70d-744bebcbc2f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c723108-3b28-4bb1-859d-2ecefd5fadef",
+      "comment": "",
+      "command": "click",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09d458d3-8962-49c2-b3bd-747422bf583d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-3:nth-child(2)",
+      "targets": [
+        ["css=.col-lg-3:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[7]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b7ff29e-a9b3-42f2-a9ba-b31688d0ea36",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipCode",
+      "targets": [
+        ["id=zipCode", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.postalCode", "name"],
+        ["css=#zipCode", "css:finder"],
+        ["xpath=//input[@id='zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[7]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "234"
+    }, {
+      "id": "779285cb-facb-4152-b01e-f3f4c03e1b1b",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.editValue.phoneNumber", "name"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89670f98-4c78-48e4-b2bc-786c2b909776",
+      "comment": "",
+      "command": "click",
+      "target": "id=addAddressSubmit",
+      "targets": [
+        ["id=addAddressSubmit", "id"],
+        ["css=#addAddressSubmit", "css:finder"],
+        ["xpath=//input[@id='addAddressSubmit']", "xpath:attributes"],
+        ["xpath=//form[@id='addAddress']/div[12]/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5a311f5-93b3-495a-a4c5-9c6437e521d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["87dbda4b-b854-4738-8d74-281689e8208e"]
+  }],
+  "urls": ["https://www.barnesandnoble.com/"],
+  "plugins": []
+}

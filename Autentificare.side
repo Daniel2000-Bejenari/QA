@@ -1,0 +1,117 @@
+{
+  "id": "fe9b064f-3553-4c87-a9d2-265ff188c57e",
+  "version": "2.0",
+  "name": "Autentificare",
+  "url": "https://www.barnesandnoble.com/",
+  "tests": [{
+    "id": "001b269a-835d-4b4c-a304-3c42eb3df713",
+    "name": "Autentificare_Test",
+    "commands": [{
+      "id": "e785431f-a6c5-44d9-97af-a23fbabdd219",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.barnesandnoble.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79854688-63ce-4d4b-87a5-1c8fbc49f626",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "774x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c00f8643-5255-4193-9283-03f939e4d325",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler",
+      "targets": [
+        ["css=.navbar-toggler", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//header[@id='rhf_header_element']/nav/div/button", "xpath:idRelative"],
+        ["xpath=//nav/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85adb233-d44c-4766-9563-286776a4bece",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rhf-plus-icon",
+      "targets": [
+        ["css=.rhf-plus-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb403481-135f-4842-9c0e-cd0b9894eef2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rhf-modal-link",
+      "targets": [
+        ["css=.rhf-modal-link", "css:finder"],
+        ["xpath=//div[@id='rhf-mobilePanCakeData']/div/div/ul/li/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d07ac0c-0ebc-4acf-b5e4-ac9328adfc47",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=6",
+      "targets": [
+        ["index=6"]
+      ],
+      "value": ""
+    }, {
+      "id": "343d0313-a977-425d-bcf0-589c55b45576",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.value.login", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "dbbejenari@gmail.com"
+    }, {
+      "id": "eefe87d2-4422-48ac-a4ce-d49453bea638",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=/atg/userprofiling/ProfileFormHandler.value.password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Danu2000"
+    }, {
+      "id": "9936b352-1857-4431-b9a3-4d36046006a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--large",
+      "targets": [
+        ["css=.btn--large", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[4]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In & Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "83996734-911c-4790-b64c-b6176694f6c5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["001b269a-835d-4b4c-a304-3c42eb3df713"]
+  }],
+  "urls": ["https://www.barnesandnoble.com/"],
+  "plugins": []
+}

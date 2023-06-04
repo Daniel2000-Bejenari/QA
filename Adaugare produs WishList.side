@@ -1,0 +1,84 @@
+{
+  "id": "d4466bd0-ed4f-4c55-b304-22f75958b8bc",
+  "version": "2.0",
+  "name": "Adaugare produs WishList",
+  "url": "https://www.barnesandnoble.com",
+  "tests": [{
+    "id": "0c00fece-1cdd-4fff-bd65-3e83c0048a9e",
+    "name": "Adaugare Produs WishList",
+    "commands": [{
+      "id": "05e0bff2-86d0-40cb-a85b-6ce7d5b5f81b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9bd1ad8-cd91-47c4-a5a3-8886792b87a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76d5b817-1a23-4fd0-9c14-710f571897ef",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.justify-content-start > .nav-item:nth-child(2) > .rhf-nav-link",
+      "targets": [
+        ["css=.justify-content-start > .nav-item:nth-child(2) > .rhf-nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Blog & Podcast')]", "xpath:link"],
+        ["xpath=//header[@id='rhf_header_element']/nav/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.barnesandnoble.com/blog/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2e22987-e4f0-4050-95e6-3c223e723018",
+      "comment": "",
+      "command": "click",
+      "target": "id=rhfCategoryFlyout_Fiction",
+      "targets": [
+        ["id=rhfCategoryFlyout_Fiction", "id"],
+        ["linkText=Fiction", "linkText"],
+        ["css=#rhfCategoryFlyout_Fiction", "css:finder"],
+        ["xpath=(//a[contains(text(),'Fiction')])[24]", "xpath:link"],
+        ["xpath=//a[@id='rhfCategoryFlyout_Fiction']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.barnesandnoble.com/b/fiction/books/_/N-2usxZ29Z8q8')])[4]", "xpath:href"],
+        ["xpath=//div[4]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c00e25f-0be8-447c-a4a8-07fe1199efcb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56eb3ea3-9ab8-4bfd-bd9d-b5576e0c43ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=img-9781649374042_0c96562a6c554c61a4673ea68d9664d9",
+      "targets": [
+        ["id=img-9781649374042_0c96562a6c554c61a4673ea68d9664d9", "id"],
+        ["css=#img-9781649374042_0c96562a6c554c61a4673ea68d9664d9", "css:finder"],
+        ["xpath=//input[@id='img-9781649374042_0c96562a6c554c61a4673ea68d9664d9']", "xpath:attributes"],
+        ["xpath=//label[@id='label-score-9781649374042']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8223590b-a51d-4dee-a487-7bbe91c2ef64",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0c00fece-1cdd-4fff-bd65-3e83c0048a9e"]
+  }],
+  "urls": ["https://www.barnesandnoble.com/"],
+  "plugins": []
+}

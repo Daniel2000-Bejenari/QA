@@ -1,0 +1,92 @@
+{
+  "id": "82c62c5a-59af-4cc8-a16b-953714401de5",
+  "version": "2.0",
+  "name": "Adaugare produs cos cumparaturi",
+  "url": "https://www.barnesandnoble.com",
+  "tests": [{
+    "id": "9cda0916-3d40-4f15-a2ff-367b0b653ab7",
+    "name": "Adaugare produs cos cumparaturi",
+    "commands": [{
+      "id": "505ecb11-e7f3-4aa2-9047-70e29b02f9e3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "094ed7ed-8567-4a29-96df-72da960aaba3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25b05b25-0845-4165-9603-781547a0d8f5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1865.5999755859375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3e01a96-b289-40ee-be47-001c105e3886",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=QUICK ADD",
+      "targets": [
+        ["linkText=QUICK ADD", "linkText"],
+        ["css=.quick-add-hover > .btn-quick-add", "css:finder"],
+        ["xpath=(//a[contains(text(),'QUICK ADD')])[8]", "xpath:link"],
+        ["xpath=//div[@id='thePerfectBook']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[23]", "xpath:href"],
+        ["xpath=//div[6]/div/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d38d256c-a092-4bfd-965b-c0567334ed49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart-button",
+      "targets": [
+        ["css=.add-to-cart-button", "css:finder"],
+        ["xpath=//input[@value='PRE-ORDER']", "xpath:attributes"],
+        ["xpath=//div[@id='skuSelection']/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//div/form/input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5456a9cc-38e1-4903-8291-704484c34104",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pb-content:nth-child(6) .span-with-no-wrap-white-space",
+      "targets": [
+        ["css=.pb-content:nth-child(6) .span-with-no-wrap-white-space", "css:finder"],
+        ["xpath=//div[@id='thePerfectBook']/div[2]/div/div[6]/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Stars: A Novel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec81216b-8433-40bc-98aa-db8711ff463a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pb-content:nth-child(6) .span-with-no-wrap-white-space",
+      "targets": [
+        ["css=.pb-content:nth-child(6) .span-with-no-wrap-white-space", "css:finder"],
+        ["xpath=//div[@id='thePerfectBook']/div[2]/div/div[6]/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Stars: A Novel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "aab46a94-e717-4206-91a1-676115a2020d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9cda0916-3d40-4f15-a2ff-367b0b653ab7"]
+  }],
+  "urls": ["https://www.barnesandnoble.com/"],
+  "plugins": []
+}
